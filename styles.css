@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+}
+
+body {
+    background-color: ivory;
+}
+
+.header {
+    font-size: 60px;
+    font-style: bold Verdana;
+    position: absolute;
+    right: 118px;
+    top: 20px;
+    text-shadow: 1px 1px chocolate,
+                 2px 2px chocolate,
+                 3px 3px chocolate,
+                 4px 4px chocolate;
+}
+
+.button {
+    position: absolute;
+    top: 175px;
+    right: 170px;
+    width: 150px;
+    color: chocolate;
+    font-style: Impact;
+}
+
+.info {
+    position: absolute;
+    top: 90px;
+    right: 46px;
+
+}
+
+.player {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 90px 90px;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    right: 150px;
+    top: 450px;
+    grid-gap: 15px;
+}
+
+#player1 {
+    border-radius: 50%;
+    background-color: gold;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    font-size: 80px;
+    border: solid 2px black;
+    box-shadow: 3px 3px 6px dimgray;
+}
+
+#player2 {
+    border-radius: 50%;
+    background-color: crimson;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    font-size: 80px;
+    border: solid 2px black;
+    box-shadow: 3px 3px 6px dimgray;
+}
+
+.container {
+    border-radius: 4%;
+    position: relative;
+    top: 15px;
+    left: 30px;
+    border: 6mm ridge chocolate;
+    width: 700px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    box-shadow: 10px 10px 30px dimgrey;
+
+}
+
+.column {
+    background-color: dodgerblue;
+    width: 100px;
+    height: 600px;
+}
+
+.slot {
+    background: black;
+    border-radius: 50%;
+}
+
+.hole {
+    width: 100px;
+    height: 100px;
+    background-color: gainsboro;
+    border-radius: 50%;
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+
+.player1 .hole {
+    background-color: gold;
+}
+
+.player2 .hole {
+    background-color: crimson;
+}
+
+.victory {
+    position: absolute;
+    right: 60px;
+    top: 280px;
+    font-style: Impact;
+    font-size: 75px;
+    font-weight: 2000;
+    color: chocolate;
+    text-shadow: 4px 4px 8px #000,
+                 6px 6px 12px #000,
+                 8px 8px 16px #000;
+}
+
+.footer {
+    position: absolute;
+    right: 185px;
+    bottom: 20px;
+    font-size: 20px;
+    font-style: Times;
+}
+
+@keyframes slidein {
+    from {
+    margin-left: 100%;
+    width: 300%;
+    }
+
+      to {
+    margin-left: 0%;
+    width: 100%;
+    }
+}
